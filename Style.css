@@ -1,0 +1,42 @@
+
+.container {
+    position: relative; /* Đặt container là relative để các phần tử con có thể dùng absolute để định vị */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.video-frame {
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+#frame1 {
+    width: 50%;
+    height: 70vh;
+    margin-right: 20 px;
+}
+
+#frame2 {
+    width: 20%;
+    height: 30vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+h1 {
+    font-size: 30px; /* Kích thước chữ lớn hơn */
+    text-align: center; /* Canh giữa tiêu đề */
+}
+.mapping-note,
+.camera-note {
+    position: absolute;
+    bottom: 10px;
+}
+
+.mapping-note {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
